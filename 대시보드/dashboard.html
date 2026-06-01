@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniSync — 대시보드</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+<div class="app">
+
+  <!-- ══ 1열: 강의 아이콘 레일 ══ -->
+  <div class="rail">
+    <div class="rail-logo">US</div>
+    <div class="rail-div"></div>
+    <div class="ri c1 on" title="웹 프로그래밍">웹P<div class="ldot"></div></div>
+    <div class="ri c2" title="데이터베이스">DB</div>
+    <div class="ri c3" title="알고리즘">알고</div>
+    <div class="ri c4" title="소프트웨어공학">SW</div>
+    <div class="rail-add" title="새 강의 만들기"><i data-lucide="plus"></i></div>
+    <div class="rail-bot">
+      <div class="r-ic" title="알림"><i data-lucide="bell"></i></div>
+      <div class="r-ic" title="설정"><i data-lucide="settings"></i></div>
+    </div>
+  </div>
+
+  <!-- ══ 2열: 채널 사이드바 ══ -->
+  <div class="chbar">
+    <div class="chbar-inner">
+      <div class="ch-head">
+        <div class="ch-cname">웹 프로그래밍<i data-lucide="chevron-down"></i></div>
+        <div class="ch-code">코드 : AB9F7K</div>
+        <div>
+          <span class="live-badge">
+            <span class="live-dot-anim"></span> 진행중
+          </span>
+        </div>
+      </div>
+
+      <div class="sec-lbl">공개 채널 <i data-lucide="plus"></i></div>
+      <div class="ci on"><i data-lucide="hash"></i> Q&A <span class="ci-badge">3</span></div>
+      <div class="ci"><i data-lucide="megaphone"></i> 공지사항</div>
+      <div class="ci"><i data-lucide="message-circle"></i> 일반</div>
+      <div class="ci"><i data-lucide="folder"></i> 자료실</div>
+
+      <div class="sec-lbl">퀴즈 <i data-lucide="plus"></i></div>
+      <div class="ci"><i data-lucide="clipboard-list"></i> 퀴즈 #1</div>
+      <div class="ci"><i data-lucide="clipboard-list"></i> 퀴즈 #2</div>
+
+      <div class="ch-bot">
+        <div class="cu">
+          <div class="cu-av">이<div class="odot"></div></div>
+          <div class="cu-info">
+            <div class="cu-name">이현수 교수</div>
+            <div class="cu-role">professor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ 3열: 메인 콘텐츠 ══ -->
+  <div class="main">
+    <div class="m-top">
+      <i data-lucide="layout-dashboard"></i>
+      <span class="m-top-title">대시보드</span>
+      <span class="m-top-desc">— 전체 강의 현황</span>
+      <div class="m-top-r">
+        <button class="btn-primary"><i data-lucide="plus"></i> 새 강의</button>
+      </div>
+    </div>
+
+    <div class="m-body">
+
+      <!-- 통계 카드 -->
+      <div class="stat-row">
+        <div class="sc">
+          <div class="sc-left">
+            <div class="sc-lbl">개설 강의</div>
+            <div class="sc-num">4</div>
+            <div class="sc-hint">이번 학기</div>
+          </div>
+          <div class="sc-icon"><i data-lucide="book-open"></i></div>
+        </div>
+        <div class="sc">
+          <div class="sc-left">
+            <div class="sc-lbl">총 수강생</div>
+            <div class="sc-num">127</div>
+            <div class="sc-hint">전체 합산</div>
+          </div>
+          <div class="sc-icon"><i data-lucide="users"></i></div>
+        </div>
+        <div class="sc">
+          <div class="sc-left">
+            <div class="sc-lbl">미답변 질문</div>
+            <div class="sc-num danger">8</div>
+            <div class="sc-hint">답변 필요</div>
+          </div>
+          <div class="sc-icon"><i data-lucide="message-circle"></i></div>
+        </div>
+        <div class="sc">
+          <div class="sc-left">
+            <div class="sc-lbl">라이브</div>
+            <div class="sc-num live">1</div>
+            <div class="sc-hint">진행중</div>
+          </div>
+          <div class="sc-icon"><i data-lucide="radio"></i></div>
+        </div>
+      </div>
+
+      <!-- 강의 목록 -->
+      <div class="g-title">강의 목록</div>
+      <div class="cgrid">
+        <div class="cc live">
+          <div class="cc-top">
+            <div><div class="cc-name">웹 프로그래밍</div><div class="cc-code">WEB-2024 · 38명</div></div>
+            <span class="cbg cbg-live">진행중</span>
+          </div>
+          <div class="cc-meta">
+            <span><i data-lucide="message-circle"></i>질문 3</span>
+            <span><i data-lucide="folder"></i>자료 12</span>
+            <span class="cc-enter"><i data-lucide="arrow-right"></i>입장</span>
+          </div>
+        </div>
+        <div class="cc soon">
+          <div class="cc-top">
+            <div><div class="cc-name">데이터베이스</div><div class="cc-code">DB-2024 · 35명</div></div>
+            <span class="cbg cbg-soon">35분 후</span>
+          </div>
+          <div class="cc-meta">
+            <span><i data-lucide="message-circle"></i>질문 5</span>
+            <span><i data-lucide="folder"></i>자료 8</span>
+            <span class="cc-enter"><i data-lucide="arrow-right"></i>입장</span>
+          </div>
+        </div>
+        <div class="cc idle">
+          <div class="cc-top">
+            <div><div class="cc-name">알고리즘</div><div class="cc-code">ALG-2024 · 30명</div></div>
+            <span class="cbg cbg-idle">대기중</span>
+          </div>
+          <div class="cc-meta">
+            <span><i data-lucide="message-circle"></i>질문 0</span>
+            <span><i data-lucide="folder"></i>자료 15</span>
+            <span class="cc-enter"><i data-lucide="arrow-right"></i>입장</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 최근 활동 -->
+      <div class="g-title">최근 활동</div>
+      <div class="act-box">
+        <div class="ai">
+          <div class="ai-dot q"></div>
+          <div class="ai-txt"><strong>웹 프로그래밍</strong> <span class="ai-content">· 익명 학생 — JSP 세션과 쿠키의 차이가 무엇인가요?</span></div>
+          <div class="ai-time">방금 전</div>
+        </div>
+        <div class="ai">
+          <div class="ai-dot f"></div>
+          <div class="ai-txt"><strong>데이터베이스</strong> <span class="ai-content">· 자료 업로드 — 6주차_ER다이어그램.pdf</span></div>
+          <div class="ai-time">12분 전</div>
+        </div>
+        <div class="ai">
+          <div class="ai-dot n"></div>
+          <div class="ai-txt"><strong>알고리즘</strong> <span class="ai-content">· 공지 — 중간고사 범위 안내</span></div>
+          <div class="ai-time">1시간 전</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ══ 4열: 멤버 목록 ══ -->
+  <div class="members">
+    <div class="mb-head"><div class="mb-title">이현수 교수</div></div>
+    <div class="mb-sec">온라인 (3)</div>
+    <div class="mb-item"><div class="mb-av av1">김<div class="st on"></div></div><div class="mb-name">김민준</div></div>
+    <div class="mb-item"><div class="mb-av av2">박<div class="st on"></div></div><div class="mb-name">박서연</div></div>
+    <div class="mb-item"><div class="mb-av av3">최<div class="st on"></div></div><div class="mb-name">최도현</div></div>
+    <div class="mb-sec">오프라인 (2)</div>
+    <div class="mb-item mb-off"><div class="mb-av av4">이<div class="st off"></div></div><div class="mb-name">이서윤</div></div>
+    <div class="mb-item mb-off"><div class="mb-av av5">한<div class="st off"></div></div><div class="mb-name">한지수</div></div>
+  </div>
+
+</div>
+<script>lucide.createIcons();</script>
+</body>
+</html>
